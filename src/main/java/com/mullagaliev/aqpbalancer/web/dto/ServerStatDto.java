@@ -1,0 +1,36 @@
+package com.mullagaliev.aqpbalancer.web.dto;
+
+public record ServerStatDto(
+        String id,
+        String name,
+        String type,
+        String url,
+        int weight,
+        boolean enabled,
+        int timeoutMs,
+        double baseLatencyMs,
+        double failureRate,
+        double simulatedAlpha,
+        long totalRequests,
+        long successCount,
+        long failureCount,
+        double sharePercent,
+        double averageLatencyMs,
+        double lastLatencyMs,
+        int queueSize,
+        int activeRequests,
+        int loadScore,
+        int lastStatusCode,
+        String lastError,
+        boolean healthy,
+        boolean healthCheckDone,
+        long lastHealthCheckAtMs,
+        int capacity,
+        int queueCapacity,
+        int queuedRequests,
+        int rejectedRequests,
+        double utilization,
+        boolean active,
+        String poolState
+) {
+}
